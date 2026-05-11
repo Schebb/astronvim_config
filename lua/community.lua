@@ -10,7 +10,7 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.rust" },
 
-  { import = "astrocommunity.pack.catppuccin" },
-  { import = "astrocommunity.pack.monokai-pro-nvim" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   -- import/override with your plugins folder
 }
