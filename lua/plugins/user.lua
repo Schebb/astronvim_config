@@ -86,4 +86,38 @@ return {
   --      )
   --    end,
   --  },
+  -- {
+  --   "huggingface/llm.nvim",
+  --   opts = {
+  --     -- Use llm-ls as the language-server backend
+  --     lsp = {
+  --       bin_path = vim.fn.exepath "llm-ls",
+  --     },
+  --     backend = "ollama", -- llm-ls speaks the Ollama-compatible API
+  --     url = "http://127.0.0.1:11434", -- override if using a custom TGI server
+  --     model = "starcoder2:3b", -- matches the tag used in the Ollama library
+  --     -- StarCoder2 uses the <fim_prefix>/<fim_suffix>/<fim_middle> tokens
+  --     tokens_to_clear = { "<fim_middle>", "<fim_suffix>", "<file_sep>" },
+  --     fim = {
+  --       enabled = true,
+  --       prefix = "<fim_prefix>",
+  --       middle = "<fim_middle>",
+  --       suffix = "<fim_suffix>",
+  --     },
+  --     context_window = 16384,
+  --     tokenizer = {
+  --       -- Use the local weights we downloaded at build time
+  --       repository = os.getenv "STARCODER2_MODEL" or "bigcode/starcoder2-3b",
+  --     },
+  --     request_body = {
+  --       parameters = {
+  --         max_new_tokens = 128,
+  --         temperature = 0.2,
+  --         top_p = 0.95,
+  --       },
+  --     },
+  --     accept_keymap = "<Tab>",
+  --     dismiss_keymap = "<S-Tab>",
+  --   },
+  -- },
 }
