@@ -10,6 +10,8 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.rust" },
 
+  { import = "astrocommunity.recipes.telescope-lsp-mappings" },
+
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   -- import/override with your plugins folder

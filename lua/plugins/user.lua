@@ -8,6 +8,7 @@ return {
   -- == Examples of Adding Plugins ==
 
   "andweeb/presence.nvim",
+  "nvim-telescope/telescope.nvim",
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
